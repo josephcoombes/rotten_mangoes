@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'pry'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -30,6 +31,8 @@ gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'carrierwave'
+
+gem 'kaminari'
 
 # Use unicorn as the app server
 # gem 'unicorn'
