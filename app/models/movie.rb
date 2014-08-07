@@ -24,6 +24,9 @@ class Movie < ActiveRecord::Base
 
   validate :release_date_is_in_the_future
 
+  def self.search(query)
+    where("title like ?", "%#{query}%") 
+  end
 
   protected
 

@@ -2,6 +2,13 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
+
+    if params[:search_by_title]
+      @movies = Movie.search(params[:search]).order("created_at DESC")
+    else
+      @movies = Movie.all.order('created_at DESC')
+    end
+
   end
 
   def show
@@ -41,6 +48,8 @@ class MoviesController < ApplicationController
     @movie.destroy
     redirect_to movies_path
   end
+
+
 
   protected
 
