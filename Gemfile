@@ -34,6 +34,8 @@ gem 'carrierwave'
 
 gem 'kaminari'
 
+gem 'better_errors', '~> 1.1.0'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
