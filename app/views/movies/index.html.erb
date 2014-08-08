@@ -8,13 +8,5 @@
   <%= submit_tag "Search", :name => nil %>
 <% end %>
 
-<hr>
-<% @movies.each do |movie| %>
-  <%= image_tag movie.image_url.to_s  %>
-  <h2><%= link_to movie.title, movie_path(movie) %></h2>
-  <h3> <%= formatted_date(movie.release_date) %></h3>
-  <h4>Dir. <%= movie.director %> | <%= movie.runtime_in_minutes %> minutes</h4>
-  <p><%= movie.description %></p>
-  <hr>
-<% end %>
+<%= render 'movie' %>
 

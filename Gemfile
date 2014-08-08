@@ -42,6 +42,8 @@ end
 
 gem 'faker'
 
+gem 'color', '~> 1.7.1'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

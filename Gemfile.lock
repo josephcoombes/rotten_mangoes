@@ -48,6 +48,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.1)
+    color (1.7.1)
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.2.1)
@@ -142,6 +143,7 @@ DEPENDENCIES
   binding_of_caller
   carrierwave
   coffee-rails (~> 4.0.0)
+  color (~> 1.7.1)
   faker
   jbuilder (~> 2.0)
   jquery-rails
