@@ -34,7 +34,13 @@ gem 'carrierwave'
 
 gem 'kaminari'
 
-gem 'better_errors', '~> 1.1.0'
+group :development do
+  gem 'binding_of_caller'
+  gem 'better_errors', '~> 1.1.0'
+
+end
+
+gem 'faker'
 
 # Use unicorn as the app server
 # gem 'unicorn'

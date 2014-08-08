@@ -21,8 +21,11 @@ class UsersController < ApplicationController
 
   def destroy
     @user = User.find(params[:id])
-    @user.destroy
-    redirect_to movies_path
+    UserMailer.goodbye_email(@user).deliver
+    # @user.destroy
+
+    redirect_to movies_path, notice: "Deleted #{@user.firstname}"
+
   end
 
   def show
